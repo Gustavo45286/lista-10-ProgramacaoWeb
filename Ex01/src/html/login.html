@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YGO! B!</title>
+    <link rel="stylesheet" href="http://127.0.0.1:8090/estilo">
+</head>
+<body>
+    <div class="navigation" style="margin: 0%; padding: 0%;">
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="http://127.0.0.1:8090/html/login">Log-in</a>
+            <a href="http://127.0.0.1:8090/html/singin">Cadastrar-se</a>
+        </div>
+        <div class="navbar">
+            <a onclick="openNav()">USUÁRIO</a>
+            <a href="http://127.0.0.1:8090/">PAGINA INICIAL</a>
+            <a href="#news">DATABASE</a>
+            <a href="#news">INFORMAÇÕS DE CONTATO</a>     
+        </div>
+    </div>
+    
+    <div class="main" >
+        
+        <div class="login">
+
+            <div class="loginTitle">
+                <h1>Log-In</h1>
+            </div>
+
+            <div class="loginContent">    
+                <p >Usuário<br>
+                    <input class="loginName" type="text" placeholder=" Nome de usuário" name=""></p>
+                <p >Senha<br><input class="loginPassword" type="password"  placeholder=" Senha"></p>
+                <p style="text-align: center;"><button class="bt" id="bt1">Aceitar</button> <button class="bt" id="bt2">Cadastrar-se</button></p>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="http://127.0.0.1:8090/app/navigation"></script>
+    <script src="http://127.0.0.1:8090/app/usuario"></script>
+</body>
+</html>

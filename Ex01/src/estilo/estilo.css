@@ -1,0 +1,273 @@
+*{
+  font-family: 'Arial', serif;
+  margin: 0%;
+  padding: 0%;
+}
+
+body{
+  background-color: #111;
+}
+h1,p{
+  color: rgb(200, 200, 200);;
+  text-align: left;
+  padding: 14px 16px;
+  text-decoration: none;
+  transition: 0.3s;
+  font-weight: normal;
+  margin: 0%;
+}
+
+h1{
+  font-size: 25px;
+}
+p{
+  font-size: 20px;
+}
+
+.sidenav {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: #111; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+
+/* The navigation bar */
+.navbar {
+  overflow: hidden;
+  background-image: url("images/sidePurp");
+  background-color: rgb(10, 10, 10);
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+  border-bottom: solid #888 1px;
+}
+
+/* Links inside the navbar */
+.navbar a {
+  float: left;
+  display: block;
+  color: rgb(238, 238, 238);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  transition: 0.3s;
+}
+
+/* Change background on mouse-over */
+.navbar a:hover {
+  background: #ddd;
+  color: black;
+}
+.main{
+  padding-top: 45px;
+  margin-top: 45px; /* Add a top margin to avoid content overlay */
+  margin: 0%;
+  height: 100vh;
+  background-color: #000;
+}
+
+
+.modal,.modal1 {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content,.modal-content1 {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 40%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+
+.conteinerConteudo{
+  background-image: url("images/purp");
+  color: white;
+  display: grid;
+  grid-template-rows: auto auto ;
+  grid-template-columns: auto auto auto auto auto auto auto;
+  height: 1100px;
+  width: 100%; /* Full width */
+}
+
+.header{
+  grid-row: 1;
+  grid-column: 1/8;
+  width: 100%;
+  text-align: center;
+}
+
+.c1,.c2,.c3,.c4,.c5, .c6, .c7{
+  width: 145px;
+  height: 576px;
+  transition: 0.3s;
+  grid-column: auto;
+  grid-row: 2;
+  border: solid 3px rgb(10, 10, 10);
+}
+
+
+
+.login,.cadastro{
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr;
+  height: auto;
+  width: 350px;
+  background-color: rgb(36, 17, 56);
+  margin: auto;
+  margin-top: 20vh;
+  text-align: center;
+}
+
+.cadastro{
+  width: 350px;
+  margin-top: 2%;
+}
+
+
+
+
+.loginTitle,.cadastroTitle{
+  border: solid 2px rgb(36, 17, 56);
+  padding-right: 10%;
+  grid-column: auto;
+  grid-row: 1/1;
+  text-align: center;
+  border-radius: 4px;
+}
+
+
+.loginContent, .cadastroContent{
+  background-color: rgb(29, 28, 28);
+  border: solid 2px rgb(36, 17, 56);
+  border-radius: 4px;
+  height: auto;
+  width: auto;
+  grid-column: auto;
+  grid-row: 2/spam 4;
+  
+}
+
+.loginName, .loginPassword, .cadastroName,.cadastroPassword,.cadastroEmail,.cadastroDataNasc,.cadastroGender{
+  width: 300px;
+  height: 30px;
+  border: solid 2px lightgrey;
+  margin: auto;
+}
+
+
+.bt{
+  margin-top: 15px;
+  border: solid 2px rebeccapurple;
+  background-color: rebeccapurple;
+  border-radius: 30px;
+  width: 100px;
+  height: 30px;
+  color: white;
+  font-weight: bold;
+  margin: auto;
+
+}
+
+.bt[id="bt2"]{
+  background-color: white;
+  color: #888;
+}
+.bt[id="bt1"]{
+  background-color: rebeccapurple;
+  color: white;
+}
+
+.bt[id="bt3"]{
+  background-color: rebeccapurple;
+  color: white;
+}
+
+.bt[id="bt4"]{
+  background-color: rebeccapurple;
+  color: white;
+}
+
+.bt[id="bt5"]{
+  background-color: rebeccapurple;
+  color: white;
+}
+
+.bt[id="bt6"]{
+  background-color: rebeccapurple;
+  color: white;
+}
+.icon{
+  background-color: white;
+  color: darkgray;
+  border: solid 2px rgb(8, 8, 8);
+  height: 30px;
+}
+
+

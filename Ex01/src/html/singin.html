@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YGO! B!</title>
+    <link rel="stylesheet" href="http://127.0.0.1:8090/estilo">
+</head>
+<body>
+    <div class="navigation" style="margin: 0%; padding: 0%;">
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="http://127.0.0.1:8090/html/login">Log-in</a>
+            <a href="http://127.0.0.1:8090/html/singin">Cadastrar-se</a>
+        </div>
+        <div class="navbar">
+            <a onclick="openNav()">USUÁRIO</a>
+            <a href="http://127.0.0.1:8090/">PAGINA INICIAL</a>
+            <a href="#news">DATABASE</a>
+            <a href="#news">INFORMAÇÕS DE CONTATO</a>     
+        </div>
+    </div>
+    
+    <div class="main" >
+        
+        <div class="cadastro">
+
+            <div class="cadastroTitle">
+                <h1>Cadastrar-se</h1>
+                <p style="font-size: 15px;">Digite suas informações para o Cadastro</p>
+            </div>
+
+            <div class="cadastroContent">
+
+                <p >
+                    Usuário<br> 
+                    <input class="cadastroName" type="text" placeholder=" Nome de usuário" name=""></p>
+                <p >
+                    Senha <br>
+                    <input class="cadastroPassword" type="password"  placeholder=" Senha">
+                </p>
+                <p >
+                    E-Mail<br>
+                    <input class="cadastroEmail" type="email" placeholder=" E-mail"></input> 
+                </p>
+                <p >
+                    Gênero<br>
+                    <select class="cadastroGender">
+                        <option value="masculino">Masculino</option>
+                        <option value="feminino">Feminino</option>
+                        <option value="outros">Outros</option>
+                        <option value="naoComentar">Prefiro não Comentar</option>
+                    </select> 
+                    
+                </p>
+
+                <p >Data de Nascimento: <br><input class="cadastroDataNasc" type="Date" placeholder=" Data de Nascimento"></input> </p>
+                
+                
+                <p >
+                    <button class="bt" id="bt3">Aceitar</button>
+                    <button class="bt" id="bt4">Voltar</button>
+                </p>
+            </div>
+
+        </div>
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h1 style="color: #222;">Todas as informações estão corretas ?</h1>
+                <p style="color: #222;">Deseja continuar?</p>
+                <p><button class="bt" id="bt5">Aceitar</button> <button class="bt" id="bt6">Cancelar</button></p>
+            </div>
+        </div>
+
+
+        <div id="myModal1" class="modal">
+            <div class="modal-content1">
+                <span class="close">&times;</span>
+                <h1 style="color: #222;">Dejesa Sair?</h1>
+                <p style="color: #222;">Cancelar e sair?</p>
+                <p><button class="bt" id="bt7">Sim</button> <button class="bt" id="bt8">Não</button></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="http://127.0.0.1:8090/app/navigation"></script>
+    <script src="http://127.0.0.1:8090/app/cadastro"></script>
+</body>
+</html>
